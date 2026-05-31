@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, MapPin, Phone, ArrowUpRight, Link as LinkedinIcon } from "lucide-react";
 import { useState } from "react";
 import { Reveal } from "./Reveal";
 
@@ -28,7 +28,7 @@ export function Contact() {
               { icon: Mail, label: "Email", value: "adilisrar572@gmail.com", href: "mailto:adilisrar572@gmail.com" },
               { icon: Phone, label: "Phone", value: "+92 312 2912494", href: "tel:+923122912494" },
               { icon: MapPin, label: "Location", value: "Chakwal, Pakistan" },
-              { icon: Linkedin, label: "LinkedIn", value: "adil-israr", href: "https://www.linkedin.com/in/adil-israr-a16a47327" },
+              { icon: LinkedinIcon, label: "LinkedIn", value: "adil-israr", href: "https://www.linkedin.com/in/adil-israr-a16a47327" },
             ].map((c) => (
               <Reveal key={c.label}>
                 <a
