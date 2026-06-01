@@ -11,18 +11,6 @@ import adilImg from "@/assets/adil.png";
 import { useRef } from "react";
 
 export function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const rx = useSpring(useTransform(my, [-50, 50], [8, -8]), { stiffness: 120, damping: 14 });
-  const ry = useSpring(useTransform(mx, [-50, 50], [-8, 8]), { stiffness: 120, damping: 14 });
-
-  const onMove = (e: React.MouseEvent) => {
-    const r = ref.current?.getBoundingClientRect();
-    if (!r) return;
-    mx.set(e.clientX - r.left - r.width / 2);
-    my.set(e.clientY - r.top - r.height / 2);
-  };
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden pt-28 md:pt-32">
