@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowDown, Mail, Sparkles } from "lucide-react";
 
 const LinkedinIcon = (p: React.SVGProps<SVGSVGElement>) => (
