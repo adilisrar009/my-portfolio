@@ -12,7 +12,7 @@ const skills = [
   { name: "Git & GitHub", level: 80 },
 ];
 
-const stack = ["HTML", "CSS", "Tailwind", "JS", "jQuery", "Shopify", "Liquid", "Git", "Figma", "Vite", "React", "VS Code"];
+const stack = ["HTML", "CSS", "Tailwind", "JS", "jQuery", "Shopify", "Liquid", "Git", "Figma", "SEO", "React", "VS Code"];
 
 export function Skills() {
   return (
