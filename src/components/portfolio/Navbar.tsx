@@ -34,15 +34,8 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:py-5">
-        <a href="#hero" className="group flex items-center gap-2.5">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-card/60 backdrop-blur transition-colors group-hover:bg-foreground">
-            <span className="font-display text-base leading-none text-foreground transition-colors group-hover:text-background">A</span>
-            <span className="absolute -bottom-0.5 -right-0.5 h-1.5 w-1.5 rounded-full bg-foreground" />
-          </span>
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="font-display text-sm tracking-wide">Adil Israr</span>
-            <span className="text-[9px] uppercase tracking-[0.3em] text-muted-foreground">Developer</span>
-          </span>
+        <a href="#hero" className="font-display text-xl tracking-[0.3em] text-foreground hover:opacity-80 transition-opacity">
+          ADIL
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm">
           {links.map((l) => (
