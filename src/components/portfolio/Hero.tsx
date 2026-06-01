@@ -38,7 +38,7 @@ export function Hero() {
           </motion.div>
 
           <h1 className="mt-6 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] tracking-tight">
-            {["Crafting", "Pixel-Perfect", "Web", "Experiences."].map((word, i) => (
+            {["Building", "Brands", "That", "Convert."].map((word, i) => (
               <motion.span
                 key={i}
                 initial={{ opacity: 0, y: 60 }}
