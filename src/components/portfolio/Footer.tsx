@@ -6,7 +6,7 @@ export function Footer() {
           ADIL ISRAR
         </div>
         <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-border pt-6 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          <div>© {new Date().getFullYear()} — Adil Israr. Crafted with care.</div>
+          <div>© {new Date().getFullYear()} — Adil Israr.</div>
           <div className="flex items-center gap-6">
             <span>Urdu</span>
             <span className="h-1 w-1 rounded-full bg-muted-foreground" />

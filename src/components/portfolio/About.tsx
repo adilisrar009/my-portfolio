@@ -17,7 +17,7 @@ export function About() {
       </div>
 
       <div className="relative mx-auto max-w-7xl grid lg:grid-cols-12 gap-12">
-        <div className="lg:col-span-4 lg:sticky lg:top-32 lg:self-start">
+        <div className="lg:col-span-4 flex flex-col justify-between gap-10">
           <Reveal>
             <div className="text-xs uppercase tracking-[0.4em] text-muted-foreground">01 — About</div>
             <h2 className="mt-4 font-display text-5xl md:text-6xl leading-[0.95]">
