@@ -110,10 +110,6 @@ export function Hero() {
         {/* RIGHT — stylish animated frame */}
         <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center">
           <motion.div
-            ref={ref}
-            onMouseMove={onMove}
-            onMouseLeave={() => { mx.set(0); my.set(0); }}
-            style={{ rotateX: rx, rotateY: ry, transformPerspective: 1000 }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.9, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
