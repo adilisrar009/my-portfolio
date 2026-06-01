@@ -1,4 +1,4 @@
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowDown, Mail, Sparkles } from "lucide-react";
 
 const LinkedinIcon = (p: React.SVGProps<SVGSVGElement>) => (
@@ -8,21 +8,9 @@ const GithubIcon = (p: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...p}><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2c-3.34.73-4.04-1.6-4.04-1.6-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/></svg>
 );
 import adilImg from "@/assets/adil.png";
-import { useRef } from "react";
+
 
 export function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const rx = useSpring(useTransform(my, [-50, 50], [8, -8]), { stiffness: 120, damping: 14 });
-  const ry = useSpring(useTransform(mx, [-50, 50], [-8, 8]), { stiffness: 120, damping: 14 });
-
-  const onMove = (e: React.MouseEvent) => {
-    const r = ref.current?.getBoundingClientRect();
-    if (!r) return;
-    mx.set(e.clientX - r.left - r.width / 2);
-    my.set(e.clientY - r.top - r.height / 2);
-  };
 
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden pt-28 md:pt-32">
@@ -50,7 +38,7 @@ export function Hero() {
           </motion.div>
 
           <h1 className="mt-6 font-display text-[clamp(3rem,9vw,7.5rem)] leading-[0.95] tracking-tight">
-            {["Crafting", "Pixel-Perfect", "Web", "Experiences."].map((word, i) => (
+            {["Building", "Brands", "That", "Convert."].map((word, i) => (
               <motion.span
                 key={i}
                 initial={{ opacity: 0, y: 60 }}
@@ -122,10 +110,6 @@ export function Hero() {
         {/* RIGHT — stylish animated frame */}
         <div className="lg:col-span-5 order-1 lg:order-2 flex justify-center">
           <motion.div
-            ref={ref}
-            onMouseMove={onMove}
-            onMouseLeave={() => { mx.set(0); my.set(0); }}
-            style={{ rotateX: rx, rotateY: ry, transformPerspective: 1000 }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1.9, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
