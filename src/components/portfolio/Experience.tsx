@@ -5,13 +5,13 @@ const jobs = [
   {
     period: "Aug 2025 — Jan 2026",
     company: "Conversion Kings",
-    role: "Shopify Developer",
+    role: "Internee Shopify Developer",
     desc: "Developing and customizing Shopify themes, implementing Liquid templates, optimizing store performance, and building responsive, conversion-focused eCommerce experiences aligned with client business goals.",
   },
   {
     period: "Feb 2025 — Jul 2025",
     company: "Infinity Creatives",
-    role: "Front-End Developer",
+    role: "Junior Front-End Developer",
     desc: "Built responsive web interfaces using HTML, CSS, JavaScript, and Tailwind CSS for six months while collaborating closely with designers to ship user-friendly, visually polished layouts on tight deadlines.",
   },
 ];
