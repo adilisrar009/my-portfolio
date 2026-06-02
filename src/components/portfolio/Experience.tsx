@@ -39,9 +39,9 @@ export function Experience() {
           <div className="space-y-16">
             {jobs.map((j, i) => (
               <Reveal key={j.company} delay={i}>
-                <div className={`relative pl-14 md:pl-0 md:grid md:grid-cols-2 md:gap-12 ${i % 2 ? "md:[&>div:first-child]:order-2" : ""}`}>
+                <div className={`relative pl-14 md:pl-0 lg:gap-[145px] md:grid md:grid-cols-2 md:gap-12 ${i % 2 ? "md:[&>div:first-child]:order-2" : ""}`}>
                   <div className="absolute left-2 md:left-1/2 top-2 -translate-x-1/2 h-4 w-4 rounded-full bg-foreground ring-8 ring-background" />
-                  <div className={`md:text-right ${i % 2 ? "md:text-left md:pl-12" : "md:pr-12"}`}>
+                  <div className={`md:text-left ${i % 2 ? "md:text-left md:pl-12" : "md:pr-12"}`}>
                     <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{j.period}</div>
                     <h3 className="mt-2 font-display text-3xl md:text-4xl">{j.company}</h3>
                     <div className="mt-1 text-sm text-gradient-silver italic">{j.role}</div>
