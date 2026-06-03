@@ -118,8 +118,12 @@ export function Hero() {
             {/* glowing blob */}
             <div className="absolute -inset-10 bg-gradient-to-tr from-silver/30 via-foreground/10 to-transparent blur-3xl rounded-full" />
 
-            {/* stable stylish frame */}
-            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-foreground/40 via-silver/20 to-background p-[2px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]">
+            {/* offset outlined frame behind */}
+            <div className="absolute -top-5 -left-5 h-full w-full rounded-[2rem] border border-foreground/30" />
+            <div className="absolute -top-2.5 -left-2.5 h-full w-full rounded-[2rem] border border-silver/20" />
+
+            {/* main image frame */}
+            <div className="relative h-full w-full rounded-[2rem] bg-gradient-to-br from-foreground/40 via-silver/20 to-background p-[2px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]">
               <div className="h-full w-full overflow-hidden rounded-[2rem] bg-graphite">
                 <img
                   src={adilImg}
@@ -128,6 +132,7 @@ export function Hero() {
                 />
               </div>
             </div>
+
 
             {/* floating decor */}
             <motion.div
