@@ -4,13 +4,13 @@ import { Reveal } from "./Reveal";
 import prolon from "@/assets/project-prolon.jpg";
 import lnutra from "@/assets/project-lnutra.jpg";
 import moxie from "@/assets/project-moxielash.jpg";
-import yoga from "@/assets/project-yoga.png.asset.json";
-import travels from "@/assets/project-travels.png.asset.json";
-import crafti from "@/assets/project-crafti.png.asset.json";
-import feane from "@/assets/project-feane.png.asset.json";
-import coffee from "@/assets/project-coffee.png.asset.json";
-import studio from "@/assets/project-studio.png.asset.json";
-import wedding from "@/assets/project-wedding.png.asset.json";
+import yoga from "@/assets/yoga.png";
+import travels from "@/assets/travel.png";
+import crafti from "@/assets/crafti.png";
+import feane from "@/assets/feane.png";
+import coffee from "@/assets/coffee.png";
+import studio from "@/assets/istudio.png";
+import wedding from "@/assets/wedding.png";
 
 const brandProjects = [
   {
@@ -43,13 +43,13 @@ const brandProjects = [
 ];
 
 const personalProjects = [
-  { n: "04", title: "Yogalax", tag: "Wellness · Landing", img: yoga.url, url: "https://adil-yoga-production.vercel.app/", desc: "A serene yoga studio landing page with class schedules and free-trial CTA." },
-  { n: "05", title: "TraveLand", tag: "Travel · Booking", img: travels.url, url: "https://adil-travels.vercel.app/", desc: "Cinematic travel agency site with destination packages, gallery and booking funnel." },
-  { n: "06", title: "Crafti", tag: "Lifestyle · Catalog", img: crafti.url, url: "https://adil-crafti-project.vercel.app/", desc: "Editorial showcase for a handmade goods studio with a refined, warm catalog layout." },
-  { n: "07", title: "Feane", tag: "Food · Restaurant", img: feane.url, url: "https://adil-feane.vercel.app/", desc: "Dark, appetite-driven restaurant site with menu, online ordering and table booking." },
-  { n: "08", title: "Cafe Aroma", tag: "Hospitality · Cafe", img: coffee.url, url: "https://adil-coffee.vercel.app/", desc: "Warm, atmospheric cafe landing page with menu highlights and visit-us CTA." },
-  { n: "09", title: "Interior Studio", tag: "Architecture · Studio", img: studio.url, url: "https://adil-studio.vercel.app/", desc: "Award-style interior design studio site with portfolio grid and process timeline." },
-  { n: "10", title: "Wedding Day", tag: "Event · Invitation", img: wedding.url, url: "https://adil-wedding-manager.vercel.app/", desc: "Elegant wedding invitation site with story, gallery, event details and RSVP form." },
+  { n: "04", title: "Yogalax", tag: "Wellness · Landing", img: yoga, url: "https://adil-yoga-production.vercel.app/", desc: "A serene yoga studio landing page with class schedules and free-trial CTA." },
+  { n: "05", title: "TraveLand", tag: "Travel · Booking", img: travels, url: "https://adil-travels.vercel.app/", desc: "Cinematic travel agency site with destination packages, gallery and booking funnel." },
+  { n: "06", title: "Crafti", tag: "Lifestyle · Catalog", img: crafti, url: "https://adil-crafti-project.vercel.app/", desc: "Editorial showcase for a handmade goods studio with a refined, warm catalog layout." },
+  { n: "07", title: "Feane", tag: "Food · Restaurant", img: feane, url: "https://adil-feane.vercel.app/", desc: "Dark, appetite-driven restaurant site with menu, online ordering and table booking." },
+  { n: "08", title: "Cafe Aroma", tag: "Hospitality · Cafe", img: coffee, url: "https://adil-coffee.vercel.app/", desc: "Warm, atmospheric cafe landing page with menu highlights and visit-us CTA." },
+  { n: "09", title: "Interior Studio", tag: "Architecture · Studio", img: studio, url: "https://adil-studio.vercel.app/", desc: "Award-style interior design studio site with portfolio grid and process timeline." },
+  { n: "10", title: "Wedding Day", tag: "Event · Invitation", img: wedding, url: "https://adil-wedding-manager.vercel.app/", desc: "Elegant wedding invitation site with story, gallery, event details and RSVP form." },
 ];
 
 export function Projects() {

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Code2, Rocket, Sparkles, Users, ArrowDownRight } from "lucide-react";
 import { Reveal } from "./Reveal";
-import portrait from "@/assets/adil-portrait.png.asset.json";
+import portrait from "@/assets/Gemini_Generated_Image_1dnxuu1dnxuu1dnx.png";
 
 const highlights = [
   { icon: Code2, title: "Clean Code", desc: "Maintainable, scalable, and built to last." },
@@ -63,12 +63,12 @@ export function About() {
                   <div className="absolute inset-0 bg-gradient-to-br from-foreground/[0.06] via-transparent to-foreground/[0.03] pointer-events-none" />
                   <div className="relative overflow-hidden rounded-[1.5rem]">
                     <img
-                      src={portrait.url}
+                      src={portrait}
                       alt="Adil Israr — portrait"
                       width={880}
                       height={1175}
                       loading="lazy"
-                      className="h-auto w-full object-cover grayscale contrast-[1.05]"
+                      className="h-auto w-full object-cover"
                     />
                     {/* gradient veil */}
                     <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
