@@ -46,10 +46,11 @@ export function About() {
         </Reveal>
 
         {/* Main grid: portrait + narrative */}
-        <div className="mt-16 grid lg:grid-cols-12 gap-10 items-start">
+        <div className="mt-16 grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Portrait card */}
-          <Reveal>
-            <div className="lg:col-span-5 relative">
+          <Reveal className="lg:col-span-5">
+            <div className="relative">
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 whileInView={{ opacity: 1, scale: 1 }}
