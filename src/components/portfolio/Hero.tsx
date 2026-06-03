@@ -118,49 +118,16 @@ export function Hero() {
             {/* glowing blob */}
             <div className="absolute -inset-10 bg-gradient-to-tr from-silver/30 via-foreground/10 to-transparent blur-3xl rounded-full" />
 
-            {/* rotating dashed ring */}
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="absolute -inset-6 rounded-[40%_60%_55%_45%/50%_45%_55%_50%] border border-dashed border-foreground/20"
-            />
-            {/* counter ring */}
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-              className="absolute -inset-2 rounded-[55%_45%_60%_40%/45%_55%_45%_55%] border border-foreground/30"
-            />
-
-            {/* animated gradient border morphing shape */}
-            <motion.div
-              animate={{
-                borderRadius: [
-                  "60% 40% 30% 70%/60% 30% 70% 40%",
-                  "30% 60% 70% 40%/50% 60% 30% 60%",
-                  "60% 40% 30% 70%/60% 30% 70% 40%",
-                ],
-              }}
-              transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0 bg-gradient-to-br from-foreground/40 via-silver/20 to-background p-[2px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]"
-            >
-              <motion.div
-                animate={{
-                  borderRadius: [
-                    "60% 40% 30% 70%/60% 30% 70% 40%",
-                    "30% 60% 70% 40%/50% 60% 30% 60%",
-                    "60% 40% 30% 70%/60% 30% 70% 40%",
-                  ],
-                }}
-                transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-                className="h-full w-full overflow-hidden bg-graphite"
-              >
+            {/* stable stylish frame */}
+            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-foreground/40 via-silver/20 to-background p-[2px] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]">
+              <div className="h-full w-full overflow-hidden rounded-[2rem] bg-graphite">
                 <img
                   src={adilImg}
                   alt="Adil Israr — Web Developer"
                   className="h-full w-full object-cover grayscale-[15%] contrast-[1.05]"
                 />
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* floating decor */}
             <motion.div
@@ -178,18 +145,10 @@ export function Hero() {
               <div className="text-xs uppercase tracking-widest text-muted-foreground">Based In</div>
               <div className="font-display text-lg">Chakwal, PK</div>
             </motion.div>
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-              className="absolute -bottom-10 right-2 h-24 w-24 rounded-full border border-foreground/10 flex items-center justify-center"
-            >
-              <span className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-                {"• Web Developer • Shopify ".repeat(1)}
-              </span>
-            </motion.div>
             {/* corner dots */}
             <div className="absolute -top-2 left-1/2 h-2 w-2 rounded-full bg-foreground animate-pulse" />
             <div className="absolute top-1/2 -right-3 h-2 w-2 rounded-full bg-silver animate-pulse" />
+
           </motion.div>
         </div>
       </div>
